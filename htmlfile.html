@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cssfile.css">
+    <script src="./module1.js" type="module"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Institute Form</title>
+</head>
+<body>
+    <div class="container">
+      <div class="item-a">
+        <div>
+            <img src="https://www.emaxindia.in/wp-content/uploads/2018/04/No.1-Computer-Center-In-India.jpg" alt="">
+        </div>
+
+        <div class="item-inner">
+          <h1>SILVERWINK</h1>
+          <P>Tranining and Development Institute</P>
+          <p>An ISO 9001:2015 CERTIFIED</p>
+          <p>Address: 1st Floor, Pachenda Rd, near BSNL Exchange, Adarsh Colony, Muzaffarnagar, Uttar Pradesh 251001
+          </p>
+        </div>
+      </div>
+
+      <div class="item-b">
+        <h2>Enrollment No. __________________</h2>
+        <h4>Powered by : E-max education</h4>
+        <h3>Call us :8938970130 </h3>
+        <p>Email : sdtcrediffmail.com</p>
+      </div>
+  </div>
+
+  <div class="heading">
+    <span>STUDENT REGISTRATION FORM</span>
+  </div>
+
+<div class="student-details" id="peronal-details">
+          <div class="heading heading-2">
+            <span>PERSONAL DETAILS</span>
+          </div>
+
+        <form action="#" autocomplete="off" id="myform-1">
+          <table cellspacing="15">
+              <tr>
+                <td><label for="" >Student Name</label></td>
+                <td><input type="text" id="name">
+                  <br>
+                  <span id="err"></span>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="" >Father Name</label></td>
+                <td><input type="text" id="father-name">
+                  <br>
+                  <span id="father-err"></span>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="" >Mother Name</label></td>
+                <td><input type="text" id="mother-name">
+                  <br>
+                  <span id="mother-err"></span>
+                </td>
+              </tr>
+
+              <tr>
+                <td><label for="" >Gender</label></td>
+                  <td><input type="radio" name="gender" id="male"><label for="radio-1">Male</label> 
+                    <input type="radio" name="gender" id="female"><label for="radio-2">Female</label>
+                    <br>
+                    <span id="gender-err"></span>
+                  </td>
+              </tr>
+
+              <tr>
+                  <td><label for="" >Caste</label></td>
+                    <td><input type="radio" name="caste" id="gen"><label for="radio-1">Gen</label> 
+                      <input type="radio" name="caste" id="obc"><label for="radio-2">OBC</label>
+                      <input type="radio" name="caste" id="sc"><label for="radio-2">SC</label>
+                      <input type="radio" name="caste" id="st"><label for="radio-2">ST</label>
+                      <br>
+                      <span id="caste-err"></span>
+                    </td>
+              </tr>
+
+                <tr>
+                    <td><label for="" >Date of Birth</label></td>
+                    <td><input type="text" id="dob">
+                      <br>
+                      <span id="dob-err"></span>
+                    </td>
+                </tr>
+                  <tr>
+                    <td><label for="" >Mobile</label></td>
+                    <td><input type="number" id="mobile">
+                      <br>
+                      <span id="mobile-err"></span>
+                    </td>
+                    <span></span>
+                  </tr>
+                    <tr>
+                      <td><label for="" >E-mail</label></td>
+                      <td><input type="email" id="email-id">
+                        <br>
+                        <span id="email-err"></span>
+                      </td>
+                    </tr>
+                      <tr>
+                        <td><label for="" >Password</label></td>
+                        <td><input type="password" id="pass">
+                          <br>
+                          <span id="pass-err"></span>
+                        </td>
+                      </tr>
+                        <tr>
+                          <td><label for="" >Aadhar Card</label></td>
+                          <td><input type="number" id="aadhar">
+                            <br>
+                            <span id="aadhar-err"></span>
+                          </td>
+                        </tr>
+            </table>
+        </form>
+</div> 
+
+<div class="fee" id="fees">
+  <div class="heading heading-2">
+    <span>COURSE AND FEES</span>
+  </div>
+  <div class="course">
+    <div class="image-file">
+      <div class="img">
+          <label class="fileimg">
+              Select Image
+              <input type="file" id="imgInput" accept="image"/>
+          </label>
+          <img id="imgg"  style="position: relative; bottom: 23px;"  alt="200 px x 200px  IMAGE" width="200px" height="200px" />
+      </div>
+    </div>
+    <form action="#" autocomplete="off" id="myform-2">
+      <table cellspacing="20">
+          <tr>
+            <td><label for="" >Course Applied</label></td>
+            <td><input type="text" id="course-app" onchange="course_select()" class="inpt" list="coursess">
+              <datalist id="coursess"></datalist>
+              <br>
+              <span id="course-err"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="" >Course Duration</label></td>
+            <td><input type="text" id="course-dur">
+              <br>
+              <span id="time-err"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="" >Course Time</label></td>
+            <td><input type="text" id="course-time" list="coursee-time">
+              <datalist id="coursee-time">
+              </datalist>
+              <br>
+              <span id="ctime-err"></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="" >Fee</label></td>
+              <td><input type="checkbox" name="fees" id="reg_fee"><label for="radio-1">Registration-Fee</label> 
+                <input type="checkbox" name="fees" id="add_fee"><label for="radio-2">Admission-Fee</label>
+                <br>
+                <span id="fee-err"></span>
+              </td>
+          </tr>
+
+          
+        </table>
+    </form>
+  </div>
+</div>  
+
+<div class=" student-details education" id="education">
+  <div class="heading heading-2">
+    <span>EDUCATION QUALIFICATION</span>
+  </div>
+  <form action="#" autocomplete="off" id="myform-3">
+    <table cellspacing="20">
+        <tr>
+          <td><label for="" >Qualification</label></td>
+          <td><input type="text" id="qualification" onchange="education()" class="inpt" list="qual">
+            <datalist id="qual"></datalist>
+            <br>
+            <span id="qual-err"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="">Board/University</label></td>
+          <td><input type="text" id="qual-dur" list="q-list">
+            <datalist id="q-list">
+            </datalist>
+            <br>
+            <span id="qualtime-err"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="" >Year of Passing</label></td>
+          <td><input type="text" id="year-time">
+            <br>
+            <span id="year-err"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="" >Percentage</label></td>
+          <td><input type="text" id="percent">
+            <br>
+            <span id="percent-err"></span>
+          </td>
+        </tr>
+      </table>
+    </form>
+</div>
+
+
+<div class="container-3">
+  <input type="button" value="Back"  onclick="back_page()">
+    <input type="reset" value="Reset" id="clear-field" onclick="reset_value()">
+    <input type="button" value="Submit"  id="btn" onclick="validation()">
+    <input type="button" value="Next" id="next-page" onclick="next_pagee()">
+</div>  
+  
+<script src="./jsfile.js"></script>
+<script src="./course.js"></script>
+</body>
+</html>

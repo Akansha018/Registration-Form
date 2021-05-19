@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: #727475;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #677480, #85888a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #909497, #8d8e8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+  }
+  .container{
+    background: rgba(49, 47, 51, 0.87);
+    padding: 1em;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-column-gap: 7em;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .container-2{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) ;
+    grid-column-gap: 7em;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .fee{
+    margin: 20px auto;
+    background: rgb(40, 41, 41);
+    width: 63%;
+    cursor: pointer;
+    height: 355px;
+    color: rgb(13, 197, 29);
+    
+
+  }
+  .container-3{
+    background: rgb(40, 41, 41);
+    width: 40%;
+    height: 40px;
+    margin: 10px auto;
+  }
+  .student-details{
+    background: rgb(40, 41, 41);
+    width: 40%;
+    margin: 10px auto;
+    cursor: pointer;
+    color: rgb(13, 197, 29);
+    
+  }
+  
+  .item-a {
+    display: grid;
+    /* border: 1px black solid; */
+    grid-template-columns: 0.7fr 2fr;
+    grid-gap: 10px;
+    /* background: #bdc3c7; */
+    color: rgb(13, 197, 29);
+    
+    /* grid-auto-rows: minmax(40px); */
+  }
+  .item-a > div > img{
+    height: 126px;
+    border-radius: 100px;
+  }
+  .item-b{
+    /* background: #ded; */
+    justify-self: right;
+    color: rgb(13, 197, 29);
+  
+  }
+  .item-b > h4{
+    margin-left: 150px;
+    font-size: 17px;
+    padding: 10px;
+    /* color: red; */
+  }
+  .item-b > h3{
+    margin-left: 223px;
+  }
+  .item-b > p{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+    margin-left: 145px;
+    padding: 10px;
+  }
+  .heading{
+    /* background: rgba(44, 55, 77, 0.3);   */
+    background-color: rgb(13, 197, 29);
+    color: #fff;
+    font-size: 30px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 600;
+  }
+  .heading > span{
+    color: #fff;
+    font-size: 30px;
+  }
+  label{
+    font-size: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+  input{
+    width: 240px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    justify-content: space-between;
+    
+    /* margin: 20px 0px 0px 40px; */
+  }
+  
+  table{
+    align-items: center;
+  }
+  input[type=button]{
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px 0px 0px 50px;
+    cursor: pointer;
+    background: rgb(13, 197, 29);
+    color: #fff;
+  }
+  input[type=reset]{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px 0px 0px 60px;
+    cursor: pointer;
+    background: rgb(13, 197, 29);
+    color: #fff;
+  }
+  input[type=submit]{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px 0px 0px 60px;
+    cursor: pointer;
+    background: rgb(13, 197, 29);
+    color: #fff;
+  }
+  input[type=radio]{
+    width: 15px;
+    margin: 0px;
+  }
+  input[type=button]:hover ,input[type=reset]:hover , input[type=submit]:hover{
+    background: rgba(10, 1, 307, 0.8);
+  }
+  span{
+    color: red;
+    font-size: 20px;
+  }
+
+  input[type=checkbox]{
+    /* margin: 10px 0px 0px 40px; */
+    height: 20px;
+    width: 15px;
+    /* width: 240px; */
+    /* height: 30px; */
+    border-radius: 10px;
+    outline: none;
+    /* justify-content: space-between; */
+  }
+
+  .image-file{
+    /* width: 27%; */
+    /*background: lightgray;*/
+    height: inherit;
+    float: left;
+}
+.img{
+    width: 200px;
+   /*background-color: mediumblue;*/
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border: 2px solid green;
+    font-size: 20px;
+    text-align: center;
+}
+#imgg:hover{
+  zoom: 1.2;
+}
+.fileimg{
+    /* border: 2px solid green; */
+    /* padding: 10px; */
+    /* background-color: mediumslateblue; */
+    position: relative;
+    top: 212px;
+    cursor: pointer;
+    width: 180px;
+    /* border-top: 1px solid white; */
+    margin: 10px auto;
+    background: rgb(13, 197, 29);
+    color: #fff;
+    border-radius: 10px;
+}
+.fileimg:hover{
+  background: rgb(212, 5, 5);
+  color: #000;
+}
+.fileimg input[type=file] {
+    display: none;
+}
+
+  
+  
